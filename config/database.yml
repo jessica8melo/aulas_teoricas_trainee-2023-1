@@ -84,3 +84,8 @@ production:
   database: trainee_2023_1_production
   username: trainee_2023_1
   password: <%= ENV["TRAINEE_2023_1_DATABASE_PASSWORD"] %>
+
+  default: &default
+  # Modifique apenas as linhas abaixo e não apague ou modifique as outras linhas!
+  username: <%= ENV['db_user'] %>
+  password: <%= ENV['db_password'] %>
